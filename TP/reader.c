@@ -290,7 +290,7 @@ static void clear(void)
             perror(" => Reader <= clear. Status: Error writing to stdout");
         }
     }
-    if (stts_logFD && stts_dataFD && stts_dataFD)
+    if (stts_logFD || stts_dataFD || stts_dataFD)
     {
         exit(EXIT_FAILURE);
     }
